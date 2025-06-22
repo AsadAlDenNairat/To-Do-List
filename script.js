@@ -94,3 +94,8 @@ function confirmDeleteTodo() {
     saveTodos();
     render();
 }
+function deleteDoneTodos() {
+    todos = todos.filter(todo => !todo.done);
+    saveTodos();
+    render();
+}
