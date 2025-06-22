@@ -30,3 +30,16 @@ if (checktodos.length === 0) {
         `;
         todoList.appendChild(li);
     });
+}
+function msgshow(message) {
+    const container = document.querySelector('.container');
+    const existingMessageBox = container.querySelector('.message-box');
+    if (existingMessageBox) {container.removeChild(existingMessageBox);}
+    const messageBox = document.createElement('div');
+    messageBox.className = 'message-box';
+
+    const successMessages = [
+        'Task added successfully 🎉',
+        'Task has been deleted.',
+        'Task has been edited.'
+    ];
