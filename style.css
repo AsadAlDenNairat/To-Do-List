@@ -159,4 +159,9 @@ h1 {
 }
 .todo-actions .edit {
     color: #ffa000;
+} 
+
+
+.todo-actions .delete {
+    color: #f44336;
 }
