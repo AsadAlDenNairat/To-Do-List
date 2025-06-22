@@ -126,3 +126,6 @@ function confirmDeleteAll() {
     saveTodos();
     render();
 }
+function closeDeleteAllModal() {
+    document.getElementById('deleteAllModal').style.display = 'none';
+}
