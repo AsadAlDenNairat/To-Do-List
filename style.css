@@ -157,3 +157,6 @@ h1 {
 .todo-actions .toggle .fa-square-check {
     color: #00ff0d;
 }
+.todo-actions .edit {
+    color: #ffa000;
+}
