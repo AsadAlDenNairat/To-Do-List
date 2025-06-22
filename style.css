@@ -165,3 +165,8 @@ h1 {
 .todo-actions .delete {
     color: #f44336;
 }
+
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+}
