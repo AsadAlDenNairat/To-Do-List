@@ -99,3 +99,16 @@ function deleteDoneTodos() {
     saveTodos();
     render();
 }
+function deleteDoneTodos() {
+    const doneTasks = todos.filter(todo => todo.done);
+    if (doneTasks.length === 0) {
+        msgshow("No done tasks to delete.");
+        return;
+    }
+    document.getElementById('deleteAllDoneModal').style.display = 'flex';
+}
+function deleteAllTodos() {
+    todos = [];
+    saveTodos();
+    render();
+}
