@@ -317,3 +317,21 @@ input:invalid {
     font-weight: 600;
     transition: color 0.3s, text-decoration 0.3s;
 }
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-0.6rem);
+    }
+
+    10%,
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-0.6rem);
+    }
+}
