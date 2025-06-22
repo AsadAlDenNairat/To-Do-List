@@ -64,3 +64,17 @@ function add() {
         errorMessage.textContent = '⛔ Task must be at least 5 characters long';
         return;
     }
+    if (taskText[0] >= '0' && taskText[0] <= '9') {
+        errorMessage.textContent = '⛔ Task cannot start with a number';
+        return;
+    }
+    if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(taskText)) {
+        errorMessage.textContent = '⛔ Task must contain only English characters';
+        return;}
+    errorMessage.textContent = '';
+    todos.push({ text: taskText, done: false });
+    saveTodos();
+    todoInput.value = '';
+    render();
+    msgshow('Task added successfully 🎉');
+}
