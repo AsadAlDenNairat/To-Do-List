@@ -119,3 +119,23 @@ h1 {
 .filter-buttons button.active {
     background-color: #147485;
 }
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+    height: 1rem;
+    min-height: 20rem;
+    overflow: auto;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 1.3rem;
+}
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem;
+    border: 0.06rem solid #ddd;
+    border-radius: 0.3rem;
+    margin-bottom: 0.6rem;
+    background-color: #f9f9f9;
+}
