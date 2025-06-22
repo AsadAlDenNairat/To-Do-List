@@ -170,3 +170,4 @@ function saveEditTodo() {
     closeEditModal();
     render();
 }
+function closeDeleteModal() {document.getElementById('deleteModal').style.display = 'none';}
