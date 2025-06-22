@@ -136,3 +136,12 @@ function confirmDeleteAllDone() {
     saveTodos();
     render();
 }
+function closeDeleteAllDoneModal() {
+    document.getElementById('deleteAllDoneModal').style.display = 'none';
+}
+function filterTodos(task) {
+    const buttons = document.querySelectorAll('.filter-buttons button');
+    buttons.forEach(button => button.classList.remove('active'));
+    document.querySelector(`.filter-buttons button[onclick="filterTodos('${task}')"]`).classList.add('active');
+    render(task);
+}
