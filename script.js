@@ -145,3 +145,14 @@ function filterTodos(task) {
     document.querySelector(`.filter-buttons button[onclick="filterTodos('${task}')"]`).classList.add('active');
     render(task);
 }
+function openedit(index) {
+    currentEditIndex = index;
+    const editTodoInput = document.getElementById('editTodoInput');
+    const errorMessage = document.getElementById('edit-error-message');
+    errorMessage.textContent = '';
+    editTodoInput.value = todos[index].text;
+    document.getElementById('editModal').style.display = 'flex';
+}
+function closeEditModal() {
+    document.getElementById('editModal').style.display = 'none';
+}
