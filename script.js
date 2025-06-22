@@ -52,3 +52,15 @@ function msgshow(message) {
     container.appendChild(messageBox);
     setTimeout(() => { container.removeChild(messageBox);}, 3000);
 }
+function add() {
+    const todoInput = document.getElementById('newTodo');
+    const errorMessage = document.getElementById('error-message');
+    const taskText = todoInput.value.trim();
+    if (taskText === '') {
+        errorMessage.textContent = '⛔ Task cannot be empty';
+        return;
+    }
+    if (taskText.length < 5) {
+        errorMessage.textContent = '⛔ Task must be at least 5 characters long';
+        return;
+    }
