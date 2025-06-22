@@ -107,3 +107,8 @@ function deleteDoneTodos() {
     }
     document.getElementById('deleteAllDoneModal').style.display = 'flex';
 }
+function deleteAllTodos() {
+    todos = [];
+    saveTodos();
+    render();
+}
