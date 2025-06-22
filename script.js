@@ -71,3 +71,10 @@ function add() {
     if (!/^[a-zA-Z0-9\s.,'!?-]+$/.test(taskText)) {
         errorMessage.textContent = '⛔ Task must contain only English characters';
         return;}
+    errorMessage.textContent = '';
+    todos.push({ text: taskText, done: false });
+    saveTodos();
+    todoInput.value = '';
+    render();
+    msgshow('Task added successfully 🎉');
+}
