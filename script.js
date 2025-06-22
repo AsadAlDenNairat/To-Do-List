@@ -156,3 +156,7 @@ function openedit(index) {
 function closeEditModal() {
     document.getElementById('editModal').style.display = 'none';
 }
+function saveEditTodo() {
+    const editTodoInput = document.getElementById('editTodoInput');
+    const errorMessage = document.getElementById('edit-error-message');
+    const newText = editTodoInput.value.trim();
