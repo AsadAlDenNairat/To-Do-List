@@ -52,3 +52,7 @@ function msgshow(message) {
     container.appendChild(messageBox);
     setTimeout(() => { container.removeChild(messageBox);}, 3000);
 }
+function add() {
+    const todoInput = document.getElementById('newTodo');
+    const errorMessage = document.getElementById('error-message');
+    const taskText = todoInput.value.trim();
