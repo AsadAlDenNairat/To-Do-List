@@ -126,3 +126,13 @@ function confirmDeleteAll() {
     saveTodos();
     render();
 }
+function closeDeleteAllModal() {
+    document.getElementById('deleteAllModal').style.display = 'none';
+}
+function confirmDeleteAllDone() {
+    todos = todos.filter(todo => !todo.done);
+    closeDeleteAllDoneModal();
+    msgshow("All done Tasks has been deleted.");
+    saveTodos();
+    render();
+}
