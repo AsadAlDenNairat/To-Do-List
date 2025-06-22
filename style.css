@@ -242,3 +242,20 @@ h1 {
     background-color: #17a2b8;
     color: white;
 }
+
+.modal-content .save:hover {
+    background-color: #117a8c;
+}
+
+.modal-content .confirm {
+    background-color: #cccccc;
+    color: black;
+}
+.modal-content .cancel {
+    background-color: #f44336;
+    color: white;
+}
+
+.modal-content .cancel:hover {
+    background-color: #d32f2f;
+}
