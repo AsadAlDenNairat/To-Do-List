@@ -153,3 +153,6 @@ function openedit(index) {
     editTodoInput.value = todos[index].text;
     document.getElementById('editModal').style.display = 'flex';
 }
+function closeEditModal() {
+    document.getElementById('editModal').style.display = 'none';
+}
