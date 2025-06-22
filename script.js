@@ -83,3 +83,7 @@ function toggle(index) {
     saveTodos();
     render();
 }
+function deleteTodo(index) {
+    currentDeleteIndex = index;
+    document.getElementById('deleteModal').style.display = 'flex';
+}
