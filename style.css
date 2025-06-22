@@ -197,3 +197,19 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
+.modal-content {
+    background: #fff;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 19rem;
+}
+
+.modal-content input {
+    width: 90%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 0.16rem solid #ddd;
+    border-radius: 0.3rem;
+}
