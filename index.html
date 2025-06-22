@@ -10,6 +10,7 @@
     <title>To Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Todo Input</h1>
@@ -17,15 +18,16 @@
         <div class="todo-input">
             <div class="input-group">
                 <div class="input-group-prepend">
-                       <div class="input-group-text">
+                    <div class="input-group-text">
                         <i class="fas fa-book"></i>
                     </div>
-                    </div>
+                </div>
                 <input type="text" id="newTodo" class="form-control" placeholder="New Todo" oninput="validateTodo()">
             </div>
             <span class="error" id="error-message"></span>
             <button onclick="add()">Add new task</button>
         </div>
+
 
         <h1>Todo List</h1>
         <div class="filter-buttons">
@@ -33,6 +35,7 @@
             <button onclick="filterTodos('done')">Done</button>
             <button onclick="filterTodos('todo')">Todo</button>
         </div>
+
         <ul id="todoList" class="todo-list">No Tasks 📝</ul>
 
         <div class="footer-buttons">
@@ -40,7 +43,7 @@
             <button onclick="deleteAllTodos()">Delete all tasks</button>
         </div>
     </div>
-    
+
     <div class="modal" id="editModal">
         <div class="modal-content">
             <h2>Rename Task</h2>
@@ -52,19 +55,20 @@
             </div>
         </div>
     </div>
-     <div class="modal" id="deleteModal">
+
+    <div class="modal" id="deleteModal">
         <div class="modal-content">
             <h2>Delete Task</h2>
-              <p>Are you sure you want to delete this task?</p>
+            <p>Are you sure you want to delete this task?</p>
             <div class="modal-actions">
                 <button class="confirm" onclick="confirmDeleteTodo()">Confirm</button>
                 <button class="cancel" onclick="closeDeleteModal()">Cancel</button>
             </div>
-             </div>
+        </div>
     </div>
     <div class="modal" id="deleteAllModal">
         <div class="modal-content">
-             <h2>Delete All Tasks</h2>
+            <h2>Delete All Tasks</h2>
             <p>Are you sure you want to delete all tasks?</p>
             <div class="modal-actions">
                 <button class="confirm" onclick="confirmDeleteAll()">Confirm</button>
@@ -72,20 +76,18 @@
             </div>
         </div>
     </div>
-    
     <div class="modal" id="deleteAllDoneModal">
         <div class="modal-content">
             <h2>Delete All Done Tasks</h2>
-             <p>Are you sure you want to delete all completed tasks?</p>
+            <p>Are you sure you want to delete all completed tasks?</p>
             <div class="modal-actions">
                 <button class="confirm" onclick="confirmDeleteAllDone()">Confirm</button>
                 <button class="cancel" onclick="closeDeleteAllDoneModal()">Cancel</button>
-                 </div>
+            </div>
         </div>
     </div>
 
 
     <script src="./script.js"></script>
 </body>
-
 </html>
