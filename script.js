@@ -112,3 +112,17 @@ function deleteAllTodos() {
     saveTodos();
     render();
 }
+function deleteAllTodos() {
+    if (todos.length === 0) {
+        msgshow("No tasks to delete.");
+        return;
+    }
+    document.getElementById('deleteAllModal').style.display = 'flex';
+}
+function confirmDeleteAll() {
+    todos = [];
+    closeDeleteAllModal();
+    msgshow("All Tasks has been deleted.");
+    saveTodos();
+    render();
+}
