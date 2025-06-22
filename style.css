@@ -144,3 +144,7 @@ h1 {
     color: #f44336;
     font-weight: 500;
 }
+.todo-actions {
+    display: flex;
+    gap: 0.6rem;
+}
